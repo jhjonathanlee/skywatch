@@ -4,17 +4,29 @@
       <meta charset="utf-8">
       <title>Weather</title>
       <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <script src="./js/index.js"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="css/main.css">
+      <script src="./js/index.js"></script>
   </head>
   <body>
   <div class="horizontal-center" id="base-div">
     <div class="location text"></div>
     <div class="weather text"></div>
     <div class="icon-div"><img class="icon"></div>
-    <div class="temp text"></div>
+    <div class="text">
+      <span class="temp">-</span>
+      <span class="dropdown">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" 
+        aria-expanded="false" id="temp-dropdown">&deg;<span class="temp-units">C</span> 
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu temp-dropdown" aria-labelledby="temp-dropdown">
+        <li><a class="temp_c" href=#>&deg;C</a></li>
+        <li class="temp_f"><a href=#>&deg;F</a></li>
+      </ul>
+    </div>
+    </div>
   </div>
   </body>
 </html>

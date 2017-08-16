@@ -9,10 +9,6 @@ body, html {
   margin-top: 10%;
 }
 
-.icon {
-  font-size: 10em;
-}
-
 .text {
   font-size: 2em;
   color: #ecf0f1;
@@ -20,4 +16,12 @@ body, html {
 
 #base-div {
   font-family: Verdana, sans-serif;
+}
+
+.temp-dropdown {
+  color: black;
+}
+
+.dropdown-menu {
+  min-width: 0 !important;
 }
