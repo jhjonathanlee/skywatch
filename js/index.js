@@ -8,6 +8,8 @@ function getWeather(lat, lon) {
     $(".weather").text(current.condition.text);
     $(".icon").attr("src", current.condition.icon);
     $(".temp").html(current.temp_c + "&deg;C");
+    var loc = json.location;
+    $(".location").text(loc.name + ", " + loc.region + ", "  + loc.country);
   });
 }
 
